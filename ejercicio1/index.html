@@ -6,20 +6,35 @@
 <head>
 <meta charset="UTF-8" />
 <title>Ejercicio 1</title>
+    <!--
+        CSS: hojas de estilo en cascadas
+             Se puede insertar de 3 formas:
+                1 - En línea(inline)-- No recomendado.
+                2 - En el documento HMTL en un bloque <style>.--No recomendado pero aceptable.
+                3 - En un documento independiente.-- Recomendando.
+
+    -->
+    <!--<style>
+        p:last-child {
+            color:#0CA7B3
+        }    </style>-->
+    <!--PARA CINCULAR EL CSS Y FUENTES TIPOGRAFICAS SE UTILIZA EL >LINK REAL="STYLESHEET" HREF)-->
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+     
 
 <body>
-<div>
-  <header>
-    <h1>Ejercicio1</h1>
-    <!--
+<div class="container">
+    <header>
+        <h1>Ejercicio1</h1>
+        <!--
 		<h2>Ejercicio2</h2>
 		<h3>Ejercicio3</h3>
 		<h4>Ejercicio4</h4>
 		<h5>Ejercicio5</h5>
 		<h6>Ejercicio6</h6>
 		--> 
-    <!--
+        <!--
 		TITULO DE LIBRO: EL NARANJO H1
 		CAPITULO 1: el naranjo
 		subcapitulo 1.1 [h3]
@@ -36,21 +51,97 @@
 		subcapitulo 3.2 [h3]
 		subcapitulo 3.3 [h3]
 		--> 
-    <!--rutas relativas:
+        <!--rutas relativas:
 		para entrar a una carpeta usamos"/" <br>
 		para salir usamos cd"..
 		--> 
-    
-    <img src="images/bg-header.jpg" alt="" /> </header>
-  <nav> 
-    <!-- (unordered list) listas ordenadas
+        
+        <img src="images/bg-header.jpg" alt="" /> </header>
+    <nav> 
+        <!-- (unordered list) listas ordenadas
 	ol (ordered list) listas desordenadas
 	-->
-    <ul>
-    </ul>
-  </nav>
-  <main></main>
-  <footer></footer>
+        <ul>
+            <li><a href="#init">Inicio</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#products">Productos</a></li>
+            <li><a href="#galery">Galery</a</li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section  id="init">
+            <h2>Inicio</h2>
+            <img src="images/1.png" alt=""/>
+            <a href="#">Elemento en  linea 1</a>
+            <a href="#">Elemento en  linea 2</a>
+ 
+        
+            <a href="#">Elemento en  linea 3</a>
+            <p id="verde" class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum veniam voluptatum suscipit quisquam voluptates optio quis reiciendis, rem repudiandae non. Officiis animi expedita similique, magnam ex minima quae minus debitis.</p>
+            <p>Laborum delectus, nostrum quia dolorum ratione mollitia libero facilis nobis architecto quam sed tenetur error dolores, at enim, repellendus tempore culpa animi adipisci deserunt. Aperiam iusto quam reprehenderit at magni.</p>
+        </section>
+        <section id="services"class="section section-services">
+            <h2>Servicios</h2>
+            <img src="images/2.png" alt=""/>
+            <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit veritatis recusandae, nisi aperiam sunt nostrum quisquam perspiciatis, officiis, quidem deserunt dolor et animi cum voluptas incidunt! Ex temporibus, tenetur nam.</p>
+            <p>Enim suscipit quam incidunt, quidem molestiae beatae quasi. Optio corrupti itaque ipsa eum maiores officia veritatis iusto odio inventore eius! Soluta aspernatur iure perferendis vero necessitatibus quis possimus repudiandae commodi?</p>
+        </section>
+        <section id="products">
+            <h2>Productos</h2>
+            <img src="images/3.jpg" alt=""/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias id labore dolores, asperiores minus suscipit fugit itaque consequatur aut. Facilis cupiditate necessitatibus id saepe, exercitationem provident nobis ullam placeat laudantium.</p>
+            <p>Et quae veniam consequatur blanditiis aut, reprehenderit obcaecati architecto officia laboriosam autem maxime nulla eius quasi rem natus qui sapiente est iste ratione nihil sequi nisi aliquid. Eum fugiat, laboriosam!</p>
+        </section>
+        <section id="galery">
+            <h2>Galeria</h2>
+            <img src="images/4.jpg" alt=""/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quae quo incidunt ratione maxime rem animi ducimus saepe amet dolorum numquam repudiandae sequi optio nisi cumque, laudantium et aspernatur harum.</p>
+            <p>Tempore veritatis quaerat ratione voluptatum cumque quis ipsa illum. Magni veritatis, nobis dolor id vel est fuga, incidunt a consequatur error explicabo, eum saepe assumenda excepturi, deleniti enim vero? Molestiae.</p>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <img src="images/5.jpg" alt=""/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sequi, aliquam doloribus laboriosam. Dolores voluptas quasi rerum sit quibusdam tempore reprehenderit autem molestiae sapiente harum laborum distinctio, aspernatur ducimus architecto.</p>
+            <p>Modi, excepturi, similique. Non ipsam, expedita vitae. Quae nulla molestias tenetur ratione nam atque fugiat! Neque, laudantium. Illum, totam! Molestiae aspernatur reprehenderit eius reiciendis odio consequuntur nisi ex voluptatum asperiores.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos recervados| eduMac 2018 | cecilia Zamora</p>
+    </footer>
 </div>
+    <!--
+    Reglas y convenciones del atributo *(id)
+    Reglas:
+    -No espacios
+    -No caracteres especiales
+    -No guión bajo
+
+    Convenciones:
+        -Siempre inglés ( no hay caracteres especiales)
+        -Formato CamelCase-LowerCase:
+            -CamelCase-LowerCase: "1 era palabra minusculas y 2 da mayuscula"
+            sectionServices
+            mySectionServices
+            mySectionServicesWeb
+            (-CamelCase-UpperCase: SectionServices esta no, solo es de referencia
+
+Reglas y convenciones del atributo *(class)
+    Reglas:
+    -No espacios
+    -No caracteres especiales
+    -No guión bajo
+
+Convenciones:
+-siempre ingles
+-siempre minusculas 
+-palabras separadas con guíon medio 
+
+section-services
+my-section-services
+my-section-services-web
+
+            
+    -->
 </body>
 </html>

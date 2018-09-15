@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/*
+        Sintaxis de reglas CSS los estilos se añaden a los contenidos:
+
+        selector: le va a indicar a l navegador  cual 
+                séra el elemento que se modificará.
+        Lista de propiedades: Propiedades que se modificán.
+sintaxis:
+selector¨{
+    nombre-propiedad:valor;
+    color: #f00;
+    font-famiuly; ariañ;
+    font-size; 30px;
+}
+ 3 principales selectores y/o basicos
+    1. Etiqueta
+    2. Clase
+        Se utiliza mediante el atributo "class"
+        El atributo "class" sirve principalmente  para  añadir estilos CSS 
+        a un  elemento determinado.
+
+        Sintaxis del selector: un signo de punto"." como prefijo
+                                del valor de atributo "class".
+
+    3. Identificador(No recomendado):
+        Sintaxis del selector: un signo de numero "#" como prefijo
+                                del valor de atributo "Id".
+        Se utiliza mediante el atributo "id"
+        El atributo "id" sirve principalmente  para  añadir comportamientos JavaScript
+        a un  elemento determinado.
+
+/* Selector por etiqueta */
+/*p {
+    color:#F86565
+}
+*/
+/* Selector por etiqueta */
+/*.azul {
+    color:#088A67;
+}*/
+/* Selector por Id */
+/*#verde{
+    color:#0f0;
+}*/
+
+body {
+    font-family: arial;
+    /*font-size:  16px;*/
+    color: #333333;
+    margin: 0;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;/*Elementos de bloque se centra con
+    margen(margin) automatico a la izquierda
+    y  a la derecha.
+    
+    Elementos en línea se centran con la propiedad 
+    "text-align".
+    A un elemento en líne a podemos darle comportamientode bloque con: " display: block"
+    A un elemento en bloque a podemos darle comportamientode línea con: " display: inline"
+    */
+}
+h1 {
+    font-size: 30px;
+    color: #FF00A6;
+    font-weight: normal;
+    /*
+        200 ->think 
+        300 -> (light)
+        400 ->(normal)
+        600 ->semibold
+        700 ->(bold)
+        800 ->black
+        900 ->extra black
+    sugerencia colocar el valor numerico
+    
+Etiqueta upprcse ( es a letras en altas)
+    */
+    text-transform: uppercase;
+}
+nav ul {
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+/*Etiqueta display: inline;es para acomodar los elemtnps en lines horitontal*/
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+nav li:first-child {
+    margin-left: 0;
+}
+nav a {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0D899D;
+}
+/*nav a:hover {
+    text-decoration: underline;
+    color: #B93A3C; se utiliza para cambiar el estado del boton cuando elmouse este sobre la etiqueta d ancla*/
+nav a:hover {
+    text-decoration: underline;
+    color: #B93A3C;
+}
+/*Propiedades del modelo de cajas son:
+-background : Es una propiedad general.
+*Establecer el valor de 5 propiedades o utilizando todas las propiedades especificas
+    -background-color: Un valor hexadecimal
+    -background-image: url de la imagen 
+    -background-repeat: recibe dos valores posibles [repeat| no-repeat] 
+    -background-attachment:[scroll| fixed] scroll imagen como fondo  la imagen se va a mover y el fixed img estaticas
+    -background-position: 
+    Posicion en X: [left |center|rigth|px]
+    Posicion en Y: [top|center|bottom|px]
+
+-border : Añadir un borde a cualquier elemento
+    -Ancho del borde en pixeles
+    -Estilo del borde: [solid,double...]
+    -Color del borde en hexadecimal.
+-padding: Para estavlecer un espacio entre:
+          el borde y los contenidos 
+        -1 valor: ese valor se aplica los 4 lados
+        -2 valores: 
+            1er valor: top/bottom arriba y abajo
+            2do valor: left/right: izquierda y derecha
+            3 valores: 
+                1er valor: top
+                2do valor: left/right
+                3er valor:  bottom
+( como manecillas de reloj)
+            4 valores: 
+                1er valor: top
+                2do valor: right
+                3er valor: lefth
+                4to valor : bottom
+PROPIEDADES ESPECIFICAS  padding
+    -padding-top
+    -padding-right
+    -padding-bottom
+    -padding-left
+
+PROPIEDADES ESPECIFICAS MARGIN
+    -margib-top
+    -margin-right
+    -margin-bottom
+    -margin-left
+    -width: valor en [px|%|em] *% y em* relativos absolutos/ px*no depende de nada para definir su valor final
+    -height: valor eb [px|%|em]
+
+
+                
+-margin:  Para establecer un espacio entre
+          el borde y otro elementos.
+-width :
+-height : 
+*/
+
+.section-services {
+/* background: #EF6467 url(../images/bg-header.jpg) no-repeat center center fixed;
+    background-color: #EF6467;
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-attachment:fixed;
+    border:1px solid #f0f;
+    padding: 0 auto; establecer un espacio del contenido y el margen
+    margin: 10px;
+    */ 
+}
+/*
+    -: Un valor hexadecimal
+    -background-image: url de la imagen 
+    -background-repeat: recibe dos valores posibles [repeat| no-repeat] 
+    -background-attachment:[scroll| fixed] scroll imagen como fondo  la imagen se va a mover y el fixed img estaticas
+    -background-position: 
+    Posicion en X: [left |center|rigth|px]
+    Posicion en Y: [top|center|bottom|px]
+*/
+main h2 {
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #E66A6C;
+}
+main img {
+    max-width: 300px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px #999;
+}
+
+footer{
+    background-color: #839422;
+    text-align: center;
+    color: #B79D9D;
+    padding: 16px 0;
+    
+}
+footer p{
+    margin: 0;
+    
+}
