@@ -1,10 +1,18 @@
 @charset "UFT-8";
+/*Font */
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Muli:400,600,700');
+
+
+
+/* Font awesome */
+@import url("lib/all.css");
 
 /* Generals */
 body {
     margin: 0%;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Merriweather', serif;
+
 }
 ol, ul {
     margin: 0;
@@ -12,7 +20,7 @@ ol, ul {
     list-style-type: none;
 }
 img{
-    display: block
+    display: block;
     max-width:100%;
     
 }
@@ -31,6 +39,21 @@ img{
     max-width: 66.60%;
     margin: 0 ;
     padding: 0 10px;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+
+
+{
+    margin-top: 0%;
 }
 
 /* Header */
@@ -78,8 +101,39 @@ img{
 
 
 /* Main */
+.page-main{
+    padding: 65px 0;
+}
+
+.left{
+
+width: 31.33%;
+   float: left;
+   padding-right: 1%;
+
+}
+.rigth{
+    
+    width: 65.66%;
+    float: right;
+    padding-left: 1%;
+    
+
+}
 
 /* Footer */
+.page-footer{
+    background: #5a5858;
+    padding: 16px 0;
+   
+
+}
+.page-footer p{
+    color: #94a2b8;
+    text-align: center;
+    margin: 0;
+
+}
 
 /* Helpers */
 .clearfix:before,
