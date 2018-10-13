@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Apple</title>
+    <link rel="stylesheet" href="css/pluggins/lightbox.min.css"/>
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -27,19 +28,36 @@
         <main class="page-main">
             <section class="page-section clearfix">
                 <div class="left">
-                    <img src="images/2.jpg" alt="" srcset="">
+                    <img src="images/5.jpg" alt="" srcset="">
                    
                 
 
                 </div>
                 <div class="rigth">
-                    <h2>Inicio</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic vitae commodi minus. Recusandae sint, enim esse facilis nostrum totam at accusantium deleniti laboriosam cum soluta aperiam porro ad laudantium.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi autem odio iure consequatur illum! Veniam, cumque! Architecto libero hic quis maxime reiciendis molestiae cum explicabo ducimus. Illo voluptatibus laboriosam eum.</p>
-
-                    <h2>Conocenos</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora hic vitae commodi minus. Recusandae sint, enim esse facilis nostrum totam at accusantium deleniti laboriosam cum soluta aperiam porro ad laudantium.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi autem odio iure consequatur illum! Veniam, cumque! Architecto libero hic quis maxime reiciendis molestiae cum explicabo ducimus. Illo voluptatibus laboriosam eum.</p>
+                    <h2>Galeria</h2>
+                    <ul class="gallery-list">
+                        <li>
+                            <a href="images/2.jpg" data-lightbox="group-1" data-title="dos">
+                                <img src="images/2-tiny.jpg" alt="">
+                            </a></li>
+                        <li>
+                            <a href="images/3.jpg" data-lightbox="group-1" data-title="tres">
+                                <img src="images/3-tiny.jpg" alt="">
+                            </a></li>
+                        <li>
+                            <a href="images/4.jpg" data-lightbox="img4" data-title="cuatro">
+                                <img src="images/4-tiny.jpg" alt="">
+                            </a></li>
+                        <li>
+                            <a href="images/5.jpg" data-lightbox="img5" data-title="cinco">
+                                <img src="images/5-tiny.jpg" alt="">
+                            </a></li>
+                        <li>
+                            <a href="images/6.jpg" data-lightbox="img6" data-title="seis">
+                                <img src="images/6-tiny.jpg" alt="">
+                            </a></li>
+                    </ul>
+                       
                 </div>
 
                 
@@ -53,6 +71,8 @@
         </footer>
     </div>
     <div id="js">
+        <script src="js/lib/jquery-3.3.1.min.js"></script>
+        <script src="js/plugins/lightbox.min.js"></script>
         <script src="js/main.js"></script>
     </div>
 </body>

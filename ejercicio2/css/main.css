@@ -120,7 +120,24 @@ width: 31.33%;
     
 
 }
+/* Galery */
+.gallery-list {
+    text-align: left;
 
+}
+.gallery-list li {
+    display:  inline-block;
+    margin: 10px
+}
+.gallery-list img {
+    border: 5px solid #ffff;
+    box-shadow:  0 0 6px #94a2b8;
+    transition:  all.3s
+}
+
+.gallery-list img:hover{
+    box-shadow:  0 0 23px #94a2b8;
+}
 /* Footer */
 .page-footer{
     background: #5a5858;
